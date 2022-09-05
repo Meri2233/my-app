@@ -7,7 +7,7 @@ export default function Card({url}){
         fetch (url)
         .then(resp=>resp.json())
         .then(data=>getPokemon(data))
-    },[])
+    })
     return(
         <div className="card">
             {pokemon !== null &&(
